@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 using static AllControl;
 
 public class EndMenu : MonoBehaviour
@@ -11,7 +11,7 @@ public class EndMenu : MonoBehaviour
         GameManager.Instance.totalscore = 0;
         GameManager.Instance.score = 0;
 
-        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex - 3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 
     // Start is called before the first frame update
